@@ -1,9 +1,10 @@
-import { EXAMPLE_ACTION } from '../actions/exampleAction'
+import { EXAMPLE_ACTION_SUCCESS } from '../actions/exampleAction'
 
-function exampleReducer (state = {}, action) {
+function exampleReducer (state = [], action) {
   switch (action.type) {
-    case EXAMPLE_ACTION:
-      return action.payLoad
+    case EXAMPLE_ACTION_SUCCESS:
+      console.log('reducer: ', action.payload)
+      return action.example
 
     default:
       return state

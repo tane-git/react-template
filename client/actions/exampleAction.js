@@ -25,7 +25,6 @@ export function exampleAction () {
     dispatch(exampleActionPending())
     return exampleAPI()
       .then((example) => {
-        console.log('action example: ', example)
         dispatch(exampleActionSucess(example))
         return null
       })

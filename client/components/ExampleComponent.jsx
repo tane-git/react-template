@@ -9,7 +9,6 @@ import { exampleAction } from '../actions/exampleAction'
 
 function ExampleComponent () {
   const example = useSelector(state => state.exampleReducer)
-  console.log('ExampleComponent example: ', example)
 
   const dispatch = useDispatch()
 

@@ -8,7 +8,7 @@
     "dev": "run-p client server",
     "build": "npm run build:client",
     "build:client": "npm run webpack -- --mode=production",
-    "webpack": "webpack --config client/weback.config.js",
+    "webpack": "webpack --config client/webpack.config.js",
     "client": "webpack --watch --config client/webpack.config.js",
     "server": "nodemon server",
     "knex": "knex --knexfile server/db/knexfile.js",
